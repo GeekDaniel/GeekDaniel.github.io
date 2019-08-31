@@ -5,15 +5,20 @@
   
 
   
-  <title>Daniel&#39;s blog</title>
+  <title>CQRS | Daniel&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Daniel&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="CQRS什么是CQRS？CQRS 是指将读模型和写模型分离，从而可以分而治之。减少局部系统的复杂性和负载能力。但是会提高软件的全局复杂度。 传统信息系统模型架构初期架构![image-20190901035329545](/Users/daniel/Library/Application Support/typora-user-images/image-20190901035329545.png)">
+<meta name="keywords" content="DDD,软件架构,API设计,事件架构">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CQRS">
+<meta property="og:url" content="http://yoursite.com/2019/09/01/CQRS/index.html">
 <meta property="og:site_name" content="Daniel&#39;s blog">
+<meta property="og:description" content="CQRS什么是CQRS？CQRS 是指将读模型和写模型分离，从而可以分而治之。减少局部系统的复杂性和负载能力。但是会提高软件的全局复杂度。 传统信息系统模型架构初期架构![image-20190901035329545](/Users/daniel/Library/Application Support/typora-user-images/image-20190901035329545.png)">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-08-31T21:09:22.126Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Daniel&#39;s blog">
+<meta name="twitter:title" content="CQRS">
+<meta name="twitter:description" content="CQRS什么是CQRS？CQRS 是指将读模型和写模型分离，从而可以分而治之。减少局部系统的复杂性和负载能力。但是会提高软件的全局复杂度。 传统信息系统模型架构初期架构![image-20190901035329545](/Users/daniel/Library/Application Support/typora-user-images/image-20190901035329545.png)">
   
     <link rel="alternate" href="/atom.xml" title="Daniel&#39;s blog" type="application/atom+xml">
   
@@ -64,9 +69,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-CQRS" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-CQRS" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/09/01/CQRS/" class="article-date">
   <time datetime="2019-08-31T19:13:17.000Z" itemprop="datePublished">2019-09-01</time>
@@ -79,8 +82,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/01/CQRS/">CQRS</a>
+    <h1 class="article-title" itemprop="name">
+      CQRS
     </h1>
   
 
@@ -122,112 +125,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-初识hexo" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/08/19/初识hexo/" class="article-date">
-  <time datetime="2019-08-19T14:23:51.000Z" itemprop="datePublished">2019-08-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/19/初识hexo/">初识hexo</a>
-    </h1>
+    <a href="/2019/08/19/初识hexo/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">初识hexo</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Hexo-是什么？"><a href="#Hexo-是什么？" class="headerlink" title="Hexo 是什么？"></a>Hexo 是什么？</h1><p>快速、简洁且高效的博客框架</p>
-<h1 id="Hexo初次上手"><a href="#Hexo初次上手" class="headerlink" title="Hexo初次上手"></a>Hexo初次上手</h1><h2 id="Hexo-目录结构简介"><a href="#Hexo-目录结构简介" class="headerlink" title="Hexo 目录结构简介"></a>Hexo 目录结构简介</h2><p>![image-20190819223109220](/Users/daniel/Library/Application Support/typora-user-images/image-20190819223109220.png)</p>
-<ul>
-<li>_config.yml 是总揽大局的配置文件，配置一下目录themes(主题)。</li>
-<li>themes 主题的存放目录</li>
-</ul>
-<h2 id="主题快速配置"><a href="#主题快速配置" class="headerlink" title="主题快速配置"></a>主题快速配置</h2><p>下载开源的主题，可通过快速配置（修改_config.yml）适配到本地。通过以下步骤可以做到。</p>
-<ol>
-<li><p>下载主题</p>
-<p><a href="https://hexo.io/themes/" target="_blank" rel="noopener">hexo主题模块</a> 提供了各种开源主题。每个主题都对应着一个开源项目。直接clone到本地项目根目录下的themes文件夹即可。</p>
-</li>
-<li><p>修改_config.yml 的theme 属性。</p>
-</li>
-<li><p>重新启动服务hexo server 即可生效。</p>
-</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/19/初识hexo/" data-id="ck001kgyk0004t0vqy3lz3tv5" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/08/19/hello-world/" class="article-date">
-  <time datetime="2019-08-19T13:43:17.389Z" itemprop="datePublished">2019-08-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/19/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/19/hello-world/" data-id="ck001kgyi0003t0vq1slwdhv2" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
