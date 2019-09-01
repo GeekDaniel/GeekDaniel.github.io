@@ -89,17 +89,17 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="CQRS"><a href="#CQRS" class="headerlink" title="CQRS"></a>CQRS</h1><h2 id="什么是CQRS？"><a href="#什么是CQRS？" class="headerlink" title="什么是CQRS？"></a>什么是CQRS？</h2><p>CQRS 是指将读模型和写模型分离，从而可以分而治之。减少局部系统的复杂性和负载能力。但是会提高软件的全局复杂度。</p>
-<h2 id="传统信息系统模型架构"><a href="#传统信息系统模型架构" class="headerlink" title="传统信息系统模型架构"></a>传统信息系统模型架构</h2><h3 id="初期架构"><a href="#初期架构" class="headerlink" title="初期架构"></a>初期架构</h3><p>![image-20190901035329545](/Users/daniel/Library/Application Support/typora-user-images/image-20190901035329545.png)</p>
+<h2 id="传统信息系统模型架构"><a href="#传统信息系统模型架构" class="headerlink" title="传统信息系统模型架构"></a>传统信息系统模型架构</h2><h3 id="初期架构"><a href="#初期架构" class="headerlink" title="初期架构"></a>初期架构</h3><p><img src="https://i.postimg.cc/FKXNSTCP/cqrs-single-Model.png" alt="cqrs-single-Model"></p>
 <p>如图，我们的model 会提供CRUD功能。DB提供信息的持久化，UI负责交互(model内容聚合展示，传入更新指令)。</p>
 <h3 id="分层架构下的复杂度解决方案"><a href="#分层架构下的复杂度解决方案" class="headerlink" title="分层架构下的复杂度解决方案"></a>分层架构下的复杂度解决方案</h3><p>当展示业务展示越来越负复杂。而我们的模型还是单一的话，在分层结构中我们的model可能如下：</p>
 <p>单model 模型的决定可能根据<strong>Command model</strong>(负责写入) + <strong>Intergretion point Model</strong>(一个可以较中立的满足所有展示层的Model)</p>
-<p>![image-20190901042102415](/Users/daniel/Library/Application Support/typora-user-images/image-20190901042102415.png)</p>
+<p><img src="https://i.postimg.cc/0yw9rTnM/cqrs-complex-Representation.png" alt="cqrs-complex-Representation"></p>
 <h4 id="带来的问题"><a href="#带来的问题" class="headerlink" title="带来的问题"></a>带来的问题</h4><ul>
 <li>很难定义Single Mode,由于尝试着将多个复杂而相关度较低的的模型做统一抽象，这样恰到好处的抽象存在难度。</li>
 <li>展示业务较为复杂。如果single model 偏向于command Model ，这会造成query视图的衍生逻辑相当复杂。</li>
 <li>不适合高性能的实时展示模型。由于展示业务较为复杂，所以不适合高性能的实时展示模型</li>
 </ul>
-<h2 id="CQRS架构下的解决方案-模型分离"><a href="#CQRS架构下的解决方案-模型分离" class="headerlink" title="CQRS架构下的解决方案(模型分离)"></a>CQRS架构下的解决方案(模型分离)</h2><p>![image-20190901042755935](/Users/daniel/Library/Application Support/typora-user-images/image-20190901042755935.png)</p>
+<h2 id="CQRS架构下的解决方案-模型分离"><a href="#CQRS架构下的解决方案-模型分离" class="headerlink" title="CQRS架构下的解决方案(模型分离)"></a>CQRS架构下的解决方案(模型分离)</h2><p><img src="https://i.postimg.cc/GpPrxvZb/cqrs-split-Model.png" alt="cqrs-split-Model"></p>
 <h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><ul>
 <li>解决了Model抽象难的问题，当一个问题无法较好地达成统一时，或许分而治之才是解决之道。</li>
 <li>两个model的模式，可简化业务代码的复杂性，因为不同的model都是针对于不同的场景抽象的，他们各自更贴近他们的目标场景，以任务报表系统为例，Command Model 的抽象关注于任务具体长什么样，而报表端关注于报表指标的抽象。</li>
@@ -114,7 +114,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/01/CQRS/" data-id="ck001kgy10000t0vqm9ryoytk" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/09/01/CQRS/" data-id="ck00siwsm0002rmvq85psjiho" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DDD-软件架构-API设计-事件架构/">DDD,软件架构,API设计,事件架构</a></li></ul>
@@ -149,7 +149,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="Hexo-是什么？"><a href="#Hexo-是什么？" class="headerlink" title="Hexo 是什么？"></a>Hexo 是什么？</h1><p>快速、简洁且高效的博客框架</p>
-<h1 id="Hexo初次上手"><a href="#Hexo初次上手" class="headerlink" title="Hexo初次上手"></a>Hexo初次上手</h1><h2 id="Hexo-目录结构简介"><a href="#Hexo-目录结构简介" class="headerlink" title="Hexo 目录结构简介"></a>Hexo 目录结构简介</h2><p>![image-20190819223109220](/Users/daniel/Library/Application Support/typora-user-images/image-20190819223109220.png)</p>
+<h1 id="Hexo初次上手"><a href="#Hexo初次上手" class="headerlink" title="Hexo初次上手"></a>Hexo初次上手</h1><h2 id="Hexo-目录结构简介"><a href="#Hexo-目录结构简介" class="headerlink" title="Hexo 目录结构简介"></a>Hexo 目录结构简介</h2><p><img src="https://i.postimg.cc/L6dJD3W1/files-In-Hexo.png" alt="cqrs-single-Model"></p>
 <ul>
 <li>_config.yml 是总揽大局的配置文件，配置一下目录themes(主题)。</li>
 <li>themes 主题的存放目录</li>
@@ -168,7 +168,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/19/初识hexo/" data-id="ck001kgyk0004t0vqy3lz3tv5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/19/初识hexo/" data-id="ck00siwsk0001rmvqwwq1zolo" class="article-share-link">Share</a>
       
       
     </footer>
@@ -217,7 +217,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/19/hello-world/" data-id="ck001kgyi0003t0vq1slwdhv2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/19/hello-world/" data-id="ck00siwsf0000rmvqbfbbao5f" class="article-share-link">Share</a>
       
       
     </footer>
